@@ -1,0 +1,30 @@
+<h1>Excluir Usuário</h1>
+
+<hr>
+
+<a href="{{URL}}/admin/users">
+  <button type="button"
+          name="button"
+          class="btn btn-warning">
+          Voltar
+  </button>
+</a>
+
+<hr>
+
+<form id="excluiUsuario" name="excluiUsuario">
+
+  <div class="form-group">
+    Você deseja realmente excluir o usuário de <strong>{{nome}}</strong> com o email <strong>{{email}}</strong>?
+  </div>
+
+</form>
+
+<button type="submit"
+        class="btn btn-danger my-2"
+        form="excluiUsuario"
+        formmethod="POST"
+        name="btn-form-excluiUsuario"
+        value="vazio">
+        Excluir
+</button>

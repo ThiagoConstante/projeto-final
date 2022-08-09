@@ -1,0 +1,30 @@
+<h1>Excluir Depoimento</h1>
+
+<hr>
+
+<a href="{{URL}}/admin/testimonies">
+  <button type="button"
+          name="button"
+          class="btn btn-warning">
+          Voltar
+  </button>
+</a>
+
+<hr>
+
+<form id="cadastraDepoimento" name="cadastraDepoimento">
+
+  <div class="form-group">
+    Você deseja realmente excluir o depoimento de <strong>{{nome}}</strong> com o texto <strong>{{mensagem}}</strong>?
+  </div>
+
+</form>
+
+<button type="submit"
+        class="btn btn-danger my-2"
+        form="cadastraDepoimento"
+        formmethod="POST"
+        name="btn-form-excluir"
+        value="vazio">
+        Excluir
+</button>
